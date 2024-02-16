@@ -6,7 +6,7 @@ Este proyecto consiste en desarrollar una aplicación de lista de tareas que per
 El proyecto se diseñará y desarrollará utilizando Programación Orientada a Objetos (POO) en Java. Se planificará la estructura general de la aplicación y se definirán las funcionalidades a implementar.
 
 ## Ramas
-Para el desarrollo del proyecto, se utilizarán ramas en el repositorio de GitHub para organizar el trabajo por funcionalidades. Cada funcionalidad se implementará en una rama separada y se fusionará con la rama principal una vez completada y probada.
+Para el desarrollo del proyecto, se utilizarán las siguientes ramas:
 
 ## Funciones
 La aplicación contará con las siguientes funcionalidades:
