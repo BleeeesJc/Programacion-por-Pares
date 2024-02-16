@@ -8,7 +8,7 @@ El proyecto se diseñará y desarrollará utilizando Programación Orientada a O
 ## Ramas
 Para el desarrollo del proyecto, se utilizarán ramas en el repositorio de GitHub para organizar el trabajo por funcionalidades. Cada funcionalidad se implementará en una rama separada y se fusionará con la rama principal una vez completada y probada.
 
-## Funcionalidades
+## Funciones
 La aplicación contará con las siguientes funcionalidades:
 - Agregar nuevas tareas
 - Marcar tareas como completadas
