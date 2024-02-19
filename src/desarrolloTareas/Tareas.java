@@ -1,4 +1,4 @@
-package desarrollo_Tareas;
+package desarrolloTareas;
 
 public class Tareas {
  
