@@ -26,8 +26,9 @@ public class Main {
             System.out.println("6. Ver tareas en proceso");
             System.out.println("7. Ver tareas NO completadas");
             System.out.println("8. Eliminar tarea No completada");
-            System.out.println("9. Modificar Tarea");
-            System.out.println("10. Salir");
+            System.out.println("9. Eliminar tarea completada");
+            System.out.println("10. Modificar Tarea");
+            System.out.println("11. Salir");
 
             int opcion = sc.nextInt();
             sc.nextLine();
@@ -99,6 +100,31 @@ public class Main {
                         }
                     }
                     break;
+                case 9:
+                    System.out.println("\nTareas Completadas:");
+                    int tareaCompletadaIndex = 1;
+                    ArrayList<Tareas> tareasCompletadas = new ArrayList<>();
+                    for (Tareas tarea : listaTareas) {
+                        if (tarea.estaCompletado()) {
+                            System.out.println(tareaCompletadaIndex + ". " + tarea);
+                            tareasCompletadas.add(tarea);
+                            tareaCompletadaIndex++;
+                        }
+                    }
+                    if (!tareasCompletadas.isEmpty()) {
+                        System.out.print("Escriba el número de la tarea completada que desea eliminar: ");
+                        int numTareaEliminar = sc.nextInt();
+                        if (numTareaEliminar >= 1 && numTareaEliminar <= tareasCompletadas.size()) {
+                            Tareas tareaEliminar = tareasCompletadas.get(numTareaEliminar - 1);
+                            listaTareas.remove(tareaEliminar);
+                            System.out.println("¡Tarea eliminada!");
+                        } else {
+                            System.out.println("Ese número de tarea no existe :(");
+                        }
+                    } else {
+                        System.out.println("No hay tareas NO completadas para eliminar.");
+                    }
+                    break;
 
                 case 8:
                     System.out.println("\nTareas NO completadas:");
@@ -125,7 +151,7 @@ public class Main {
                         System.out.println("No hay tareas NO completadas para eliminar.");
                     }
                     break;
-                case 9:
+                case 10:
                     System.out.print("Escriba el número de la tarea que desea modificar: ");
                     int numTarea= sc.nextInt();
                     sc.nextLine();
@@ -139,7 +165,7 @@ public class Main {
                         System.out.println("Ese número de tarea no existe :(");
                     }
                     break;
-                case 10:
+                case 11:
                     System.out.println("Gracias por utilizar el programa, ¡hasta pronto!");
                     return;
 
